@@ -1,0 +1,104 @@
+$baseurl: "{{ site.baseurl }}";
+
+$bodyFont: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headerFont: "Six Caps";
+$defaultMargin: 1.5rem;
+
+$headerColor: white;
+$bodyColor: #171717;
+
+body {
+  font-family: $bodyFont;
+  margin: 0 $defaultMargin;
+}
+a:visited,
+a,
+a:hover,
+.btn {
+  color: $bodyColor;
+}
+.btn,
+.btn:hover {
+  border-color: $bodyColor;
+}
+.btn:hover {
+  background: #00968824;
+}
+.btn.active,
+.btn:active {
+  background: $bodyColor;
+  border-color: $bodyColor;
+}
+
+.blog-header {
+  margin: 0 (-$defaultMargin) $defaultMargin;
+  .breadcrumb {
+    padding-left: $defaultMargin;
+    a {
+      color: $headerColor;
+    }
+  }
+
+  h1 {
+    font-family: $headerFont;
+    font-size: 128px;
+    color: $headerColor;
+  }
+
+  p {
+    font-style: italic;
+  }
+
+  .hero {
+    background: url($baseurl + "/assets/images/banner.png") no-repeat center;
+    background-size: auto 100%;
+    background-color: #171717;
+  }
+}
+
+.blog-content {
+  line-height: 1.6;
+  margin: 0px auto;
+  max-width: 650px;
+  .panel {
+    border: none;
+  }
+}
+
+.blog-post-header {
+  margin-bottom: $defaultMargin;
+}
+.blog-post-content {
+  margin: 0px auto;
+  max-width: 80ch;
+  text-align: justify;
+}
+.blog-post-title {
+  margin-bottom: 0rem;
+  text-transform: capitalize;
+}
+
+.blog-post-subtitle {
+  font-style: italic;
+}
+
+// social media icons
+a.fa {
+  font-size: 48px;
+  margin: 1.5rem 0;
+}
+
+.column h2 {
+  color: lightgrey;
+  font-family: $headerFont;
+  font-size: 76px;
+}
+
+@media only screen and (max-width: 600px) {
+  .column {
+    margin-bottom: 2rem;
+  }
+  .column:first-of-type {
+    order: 3;
+  }
+}

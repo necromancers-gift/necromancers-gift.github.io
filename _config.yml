@@ -1,0 +1,10 @@
+url: "necromancers-gift.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Necromancer's Gift" # the name of your site, e.g. ACME Corp.
+author: "ldd"
+
+sass:
+  style: compressed
+repository: necromancers-gift/necromancers-gift.github.io
+# github: [metadata]
+github_issues_repository: "necromancers-gift/necromancers-gift.github.io"
