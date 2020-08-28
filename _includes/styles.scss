@@ -1,7 +1,7 @@
 $baseurl: "{{ site.baseurl }}";
 
 $bodyFont: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$headerFont: "Six Caps";
+$headerFont: "Six Caps", sans-serif;
 $defaultMargin: 1.5rem;
 
 $headerColor: white;
@@ -41,7 +41,7 @@ a:hover,
 
   h1 {
     font-family: $headerFont;
-    font-size: 128px;
+    font-size: 80px;
     color: $headerColor;
   }
 
@@ -91,17 +91,20 @@ a.fa {
 .column h2 {
   color: lightgrey;
   font-family: $headerFont;
-  font-size: 76px;
+  font-size: 68px;
 }
 
 @media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 64px;
+  }
   .column {
     margin-bottom: 2rem;
     h2 {
       font-size: 34px;
     }
     :first-of-type {
-      order: 3;
+      order: 2;
     }
   }
 }
