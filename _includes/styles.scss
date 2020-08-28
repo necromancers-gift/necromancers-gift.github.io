@@ -43,6 +43,8 @@ a:hover,
     font-family: $headerFont;
     font-size: 80px;
     color: $headerColor;
+    overflow: hidden;
+    text-overflow: clip;
   }
 
   p {
@@ -103,7 +105,7 @@ a.fa {
     h2 {
       font-size: 34px;
     }
-    :first-of-type {
+    &:first-of-type {
       order: 2;
     }
   }
