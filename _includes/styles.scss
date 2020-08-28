@@ -94,11 +94,14 @@ a.fa {
   font-size: 76px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   .column {
     margin-bottom: 2rem;
-  }
-  .column:first-of-type {
-    order: 3;
+    h2 {
+      font-size: 34px;
+    }
+    :first-of-type {
+      order: 3;
+    }
   }
 }
