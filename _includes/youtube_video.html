@@ -1,0 +1,15 @@
+<!-- note: requires variable youtube_id to be defined -->
+<div class="embed-container" style="position: relative">
+  <img
+    src="https://i.ytimg.com/vi/{{ include.youtube_id }}/maxresdefault.jpg"
+    loading="lazy"
+    alt=""
+  />
+  <a href="https://www.youtube.com/watch?v={{ include.youtube_id }}">
+    <img
+      style="position: absolute; left: 0; top: 0"
+      src="/assets/images/youtube_overlay.png"
+      alt=""
+    />
+  </a>
+</div>

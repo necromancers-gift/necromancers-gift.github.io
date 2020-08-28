@@ -1,0 +1,137 @@
+starters:
+  wind_starter: [8, 8, 8]
+  fire_starter: [8, 8, 8]
+  water_starter: [8, 8, 8]
+legendaries:
+  wind_legend: [12, 12]
+  fire_legend: [16, 16]
+  water_legend: [12, 12]
+
+bestiary:
+  ##############
+  # 1st batch  #
+  ##############
+
+  hands: [8, 8, 8]
+  turtle: [8, 8, 8]
+  bat: [8, 8, 8]
+  toad: [4, 1, 8]
+  cobras: [4, 8, 8]
+  fat_rabbit: [8, 8, 8]
+  fat_fish: [6, 8, 8]
+
+  # 2-stage creatures
+  shards: [4, 4]
+  rat: [6, 6]
+  fat_plant: [4, 4]
+  thin_plant: [4, 4]
+  firefly: [8, 8]
+
+  # 1-stage creatures
+  goldfish: [8]
+  ghost: [8]
+
+  ##############
+  # 2nd batch  #
+  ##############
+  goats: [3, 3]
+  jellyfish: [3, 3, 3]
+  seedpods: [3, 3, 3]
+  wolf: [3, 3]
+  mollusk: [3, 3]
+  bear: [3, 3]
+  clam: [3, 3]
+  mink: [3, 3]
+  seahorse: [3]
+  toucan: [3]
+  skullguy: [3]
+  capybara: [3]
+  red_panda: [3]
+  mouse: [3]
+
+  ##############
+  # 3rd batch  #
+  ##############
+  dino: [3, 3]
+  fluffy: [3, 3, 3, 3]
+  alien: [3, 3]
+  halloween_bat: [3, 3]
+  armadillo: [3]
+  worm: [3]
+  spider: [3]
+  stabbed_mammal: [3]
+  handy_cat: [3]
+  crab: [3]
+  skull_ghost: [3]
+
+  # for alignment purposes
+  empty: []
+  _empty: []
+  __empty: []
+
+names:
+  #starters
+  wind_starter: ["sunli", "sunlitika", "litika"]
+  fire_starter: ["pu’u ahi", "ingeru mura", "o ka popoki dia"]
+  water_starter: ["shialis", "arakite", "raiunix"]
+
+  ##############
+  # 1st batch  #
+  ##############
+
+  hands: ["touchit", "grabmor", "abductre"]
+  turtle: ["tortui", "torasp", "toraspine"]
+  bat: ["shadowing", "nightmare", "nightterror"]
+  toad: ["puddole", "croaklet", "croakodile"]
+  cobras: ["venito", "vendel", "venydra"]
+  fat_rabbit: ["magauri", "lepha", "gigaquad"]
+  fat_fish: ["pisci", "psaslimni", "pantalassodon"]
+
+  # 2-stage creatures
+  shards: ["abstractum", "abstracticus"]
+  rat: ["mokinoko", "mohizumi"]
+  fat_plant: ["niteroot", "nevergreen"]
+  thin_plant: ["floret", "solvine"]
+  firefly: ["mystifly", "mystiflider"]
+
+  # 1-stage creatures
+  goldfish: ["depthmaw"]
+  ghost: ["cephalotoxis"]
+
+  ##############
+  # 2nd batch  #
+  ##############
+  goats: ["Thunbos", "Fulgurus"]
+  jellyfish: ["Jelling", "Jellous", "Jellking"]
+  seedpods: ["Wis", "Wister", "Wistynia"]
+  wolf: ["Luni", "Eclix"]
+  mollusk: ["Conicus", "Naughtilus"]
+  bear: ["Minurs", "Majursa"]
+  clam: ["Shearl", "Purrltrap"]
+  mink: ["Minlight", "Umbrink"]
+  seahorse: ["Ryusumi"]
+  toucan: ["Sircan"]
+  skullguy: ["Jingem"]
+  capybara: ["Capybeary"]
+  red_panda: ["Pandoria"]
+  mouse: ["Ukucha"]
+
+  ##############
+  # 3rd batch  #
+  ##############
+  dino: ["Viltooth", "Orthrend"]
+  fluffy: ["Umbrasimia, Umbracanis, Umbraavium, Umbrafelis"]
+  alien: ["Gorgocat", "Illidusa"]
+  halloween_bat: ["???", "???"]
+  armadillo: ["Volrunt"]
+  worm: ["???"]
+  spider: ["Ariaxa"]
+  stabbed_mammal: ["Vispyes"]
+  handy_cat: ["???"]
+  crab: ["Adamancer"]
+  skull_ghost: ["Ignikuro"]
+
+  # legendaries
+  wind_legend: ["buresuaki", "kazeaki"]
+  fire_legend: ["stellus", "aurastra"]
+  water_legend: ["Axofloatl", "ryunami"]

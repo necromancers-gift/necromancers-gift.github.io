@@ -1,7 +1,9 @@
+@import "variables.scss";
+@import "//fonts.googleapis.com/css?family=Six+Caps|Open+Sans:400italic,800italic,400,600,800&display=swap";
 $baseurl: "{{ site.baseurl }}";
 
 $bodyFont: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$headerFont: "Six Caps";
+$headerFont: "Six Caps", sans-serif;
 $defaultMargin: 1.5rem;
 
 $headerColor: white;
@@ -18,19 +20,45 @@ a:hover,
   color: $bodyColor;
 }
 .btn,
-.btn:hover {
+.btn:hover,
+.btn:active {
   border-color: $bodyColor;
-}
-.btn:hover {
-  background: #00968824;
 }
 .btn.active,
 .btn:active {
   background: $bodyColor;
-  border-color: $bodyColor;
+}
+
+// landing page
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  a:first-of-type {
+    margin: 1.2rem 0;
+  }
+}
+
+// blog posts, comments, etc
+.blog-header,
+.bestiary-summary {
+  h1 {
+    font-family: $headerFont;
+    font-size: 80px;
+    color: $headerColor;
+    overflow: hidden;
+    text-overflow: clip;
+  }
+  h4 {
+    font-family: $headerFont;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: rgb(207, 207, 207);
+  }
 }
 
 .blog-header {
+  cursor: pointer;
   margin: 0 (-$defaultMargin) $defaultMargin;
   .breadcrumb {
     padding-left: $defaultMargin;
@@ -39,20 +67,20 @@ a:hover,
     }
   }
 
-  h1 {
-    font-family: $headerFont;
-    font-size: 128px;
-    color: $headerColor;
-  }
-
   p {
     font-style: italic;
   }
 
   .hero {
-    background: url($baseurl + "/assets/images/banner.png") no-repeat center;
+    position: relative;
+    background: url($baseurl + "/assets/images/banner.png") no-repeat right;
     background-size: auto 100%;
-    background-color: #171717;
+    background-color: $bodyColor;
+  }
+  .hero-footer {
+    position: absolute;
+    left: 0.2rem;
+    bottom: 0.2rem;
   }
 }
 
@@ -70,12 +98,33 @@ a:hover,
 }
 .blog-post-content {
   margin: 0px auto;
-  max-width: 80ch;
   text-align: justify;
+
+  pre {
+    overflow-y: auto;
+  }
+  code {
+    color: lightgrey;
+    background: none;
+  }
+  .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.5rem 0;
+    &.with-description {
+      margin: 1.5rem 0 0 0;
+    }
+  }
+  > ul > li {
+    list-style: outside;
+  }
 }
 .blog-post-title {
   margin-bottom: 0rem;
   text-transform: capitalize;
+  line-height: 1.5rem !important;
 }
 
 .blog-post-subtitle {
@@ -83,22 +132,113 @@ a:hover,
 }
 
 // social media icons
-a.fa {
+a.lab,
+a.las,
+i.lab,
+i.las {
   font-size: 48px;
-  margin: 1.5rem 0;
+}
+.mailing-list-subscription {
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+// youtube embed based on https://embedresponsively.com/
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .column h2 {
   color: lightgrey;
   font-family: $headerFont;
-  font-size: 76px;
+  font-size: 68px;
+}
+.column {
+  margin-bottom: 2.5rem;
 }
 
-@media only screen and (max-width: 600px) {
+// info features and footer
+.info-feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+  img {
+    width: 48%;
+  }
+  p {
+    max-width: 45%;
+    text-align: justify;
+  }
+}
+.info-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  a {
+    margin: 0 1rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 64px;
+  }
   .column {
     margin-bottom: 2rem;
+    h2 {
+      font-size: 34px;
+    }
+    &:first-of-type {
+      order: 2;
+    }
   }
-  .column:first-of-type {
-    order: 3;
+}
+
+@each $affinity, $color in $affinities {
+  .has-#{$affinity}-affinity {
+    color: $color;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: $headerColor;
+    background-color: $bodyColor;
+  }
+  .blog-post-title,
+  a.lab,
+  a.las,
+  i.lab,
+  i.las {
+    color: $headerColor;
+  }
+  a:visited,
+  a,
+  a:hover,
+  .btn {
+    color: $headerColor;
+  }
+  .btn,
+  .btn:hover,
+  .btn:active {
+    border-color: none;
+    background: $headerColor;
+    color: $bodyColor;
   }
 }

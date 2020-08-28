@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="columns">
+    <div class="column col-7 col-mx-auto col-sm-12">
+      {% include youtube_video.html youtube_id = "FcCxodwAO-g" %}
+      <div class="call-to-action">
+        <!-- match kickstarter brand colors -->
+        <a
+          class="btn btn-primary"
+          style="background: #05ce78; border-color: #222222"
+          href="https://store.steampowered.com/app/1409650/Necromancers_Gift/"
+          >{{ site.data.info.landing[page.lang].action }}</a
+        >
+        <a href="/info"
+          ><u>{{ site.data.info.landing[page.lang].more-info }}</u></a
+        >
+      </div>
+    </div>
+  </div>
+</div>

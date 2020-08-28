@@ -1,0 +1,27 @@
+<form
+  class="form-horizontal mailing-list-subscription"
+  action="https://necromancers-gift.us17.list-manage.com/subscribe/post?u=a0fac7bda055e7a0c5b600529&amp;id=a7b1f43a02"
+  method="post"
+>
+  <p>{{ site.data.info.newsletter[page.lang].action }}</p>
+  <div class="input-group">
+    <input
+      type="email"
+      name="EMAIL"
+      class="form-input"
+      placeholder="thankyou@email.com"
+    />
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px" aria-hidden="true">
+      <input
+        type="text"
+        name="b_a0fac7bda055e7a0c5b600529_a7b1f43a02"
+        tabindex="-1"
+        value=""
+      />
+    </div>
+    <button class="btn btn-primary input-group-btn">
+      {{ site.data.info.newsletter[page.lang].button }}
+    </button>
+  </div>
+</form>

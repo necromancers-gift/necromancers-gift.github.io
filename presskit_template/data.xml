@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<company>
+  <title>Necromancer's Gift</title>
+  <based-in>Greater Montreal, Canada</based-in>
+  <founding-date>2018</founding-date>
+  <website>https://www.necromancers-gift.com</website>
+  <press-contact>
+   press@pensivelion.com
+  </press-contact>
+
+  <!-- Google analytics ID: -->
+  <analytics></analytics>
+
+  <phone>--</phone>
+
+  <socials>
+    <social>
+      <name>twitter</name>
+      <link>
+      https://twitter.com/_ldd
+      </link>
+    </social>
+    <social>
+      <name>discord</name>
+      <link>
+      https://discord.com/invite/u64Mg4X
+      </link>
+    </social>
+    <social>
+      <name>youtube</name>
+      <link>
+      https://www.youtube.com/channel/UC39oc5Sq-ICfURiBrZyq1kg
+      </link>
+    </social>
+  </socials>
+
+  <description>Coming Soon!</description>
+
+  <!-- Choose between a single block: -->
+  <history>Coming Soon!</history>
+
+  <trailers>
+    <trailer>
+      <name>Battle</name>
+      <youtube>FcCxodwAO-g</youtube>
+    </trailer>
+    <trailer>
+      <name>Main Title Theme</name>
+      <youtube>rueyQqKTeF4</youtube>
+    </trailer>
+    <trailer>
+      <name>Main Battle Theme</name>
+      <youtube>-OxiG1CO50E</youtube>
+    </trailer>
+    <trailer>
+      <name>Alternative Battle Theme</name>
+      <youtube>hOJcHM5dfj4</youtube>
+    </trailer>
+  </trailers>
+
+  <!-- <awards>
+    <award>
+      <description></description>
+      <info></info>
+    </award>
+  </awards> -->
+
+  <!-- <quotes>
+    <quote>
+      <description></description>
+      <name></name>
+      <website></website>
+      <link></link>
+    </quote>
+  </quotes> -->
+
+  <additionals>
+    <additional>
+      <title>All media assets</title>
+      <description>Google Drive</description>
+      <link>https://drive.google.com/drive/folders/1WsWlJo105CL33DzwMTsSmTOeUshObdIW</link>
+    </additional>
+  </additionals>
+
+  <!-- <credits>
+    <credit>
+      <person></person>
+      <role></role>
+      <website></website>
+    </credit>
+  </credits> -->
+
+  <!-- <contacts>
+    <contact>
+      <name>Leo</name>
+      <mail>leo@pensivelion.com</mail>
+    </contact>
+  </contacts> -->
+</company>

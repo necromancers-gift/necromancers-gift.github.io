@@ -1,0 +1,38 @@
+landing:
+  en:
+    action: Wishlist Now On Steam
+    more-info: More info
+  fr:
+    action: Ajouter à la liste de souhaits sur Steam
+    more-info: Plus d'infos
+updates:
+  en: updates
+  fr: nouvelles
+video:
+  en: gameplay
+  fr: gameplay
+social_media:
+  en: social media
+  fr: réseaux sociaux
+newsletter:
+  en:
+    action: Want the demo? Subscribe!
+    button: Submit
+  fr:
+    action: Tu veux jouer à la démo? Abonne-toi à notre infolettre!
+    button: Soumettre
+info:
+  en:
+    title: info
+    bestiary: Bestiary
+    feature-creatures: 100 creatures in gorgeous pixel art
+    feature-capture: Capture and see your creatures evolve as they level up
+    feature-map: No overworld, straightforward map for easy navigation
+    feature-battle_system: Turn based system with PvP online/LAN battles available
+  fr:
+    title: info
+    bestiary: Bestiaire
+    feature-creatures: 100 superbes creatures en pixel art
+    feature-capture: Capturez et évoluez vos creatures en gagnant de l'experience
+    feature-map: Navigez le jeu sans un overworld
+    feature-battle_system: Batailles en tour par tour, PvP online/LAN inclus

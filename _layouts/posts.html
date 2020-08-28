@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    {% include head.html %}
+    <style>
+      .image-container img{
+          width: 100%;
+          image-rendering: pixelated;
+      }
+      .image-container.mid img{
+          width: 50%;
+          min-width: 300px;
+      }
+      .blog-post-content a{
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    {% include header.html %}
+    <div class="container">
+      <div class="columns">
+        <div class="column col-2 col-sm-12">
+          <div class="blog-content">
+            <h2 style="color: lightgrey;">{{ site.data.info.updates[page.lang] }}</h2>
+            {% include posts.md %}
+        </div> 
+        </div>
+          <div class="column col-6 col-mx-auto col-md-12">
+            {{ content }}
+        </div>
+        <div class="column col-3 col-sm-12" style="order: 2">
+          {% include social_media_icons.html %}
+          {% include newsletter.html %}
+        </div>
+      </div>
+
+      <div class="columns" style="margin-top:3rem;">
+        <div class="column col-4 col-mx-auto col-sm-12">
+      </div> 
+      </div>
+
+    </div>
+  </body>
+</html>
+
+

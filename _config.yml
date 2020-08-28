@@ -1,10 +1,27 @@
-url: "necromancers-gift.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.necromancers-gift.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Necromancer's Gift" # the name of your site, e.g. ACME Corp.
 author: "ldd"
+
+plugins:
+  - jekyll-feed
 
 sass:
   style: compressed
 repository: necromancers-gift/necromancers-gift.github.io
 # github: [metadata]
 github_issues_repository: "necromancers-gift/necromancers-gift.github.io"
+
+# include vendor to avoid errors https://github.com/jekyll/jekyll/issues/5267#issuecomment-241379902
+exclude: ["presskit_template", "scripts", ".env", "vendor"]
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      lang: "en"
+  - scope:
+      path: "fr"
+    values:
+      lang: "en"
