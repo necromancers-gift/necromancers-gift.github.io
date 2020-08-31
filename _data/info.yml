@@ -1,0 +1,23 @@
+updates:
+  en: updates
+  fr: nouvelles
+video:
+  en: gameplay
+  fr: gameplay
+social_media:
+  en: social media
+  fr: réseaux sociaux
+newsletter:
+  en:
+    action: Want the demo? Subscribe!
+    button: Submit
+  fr:
+    action: Tu veux jouer à la démo? Abonne-toi à notre infolettre!
+    button: Soumettre
+info:
+  en:
+    title: info
+    text: Coming soon!
+  fr:
+    title: info
+    text: :D

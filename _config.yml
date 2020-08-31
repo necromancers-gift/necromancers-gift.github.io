@@ -8,3 +8,14 @@ sass:
 repository: necromancers-gift/necromancers-gift.github.io
 # github: [metadata]
 github_issues_repository: "necromancers-gift/necromancers-gift.github.io"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      lang: "en"
+  - scope:
+      path: "fr"
+    values:
+      lang: "en"

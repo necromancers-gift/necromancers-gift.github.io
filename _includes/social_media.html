@@ -1,8 +1,10 @@
-<h2 style="color: lightgrey">SOCIAL MEDIA</h2>
+<h2 style="color: lightgrey">
+  {{ site.data.info.newsletter[page.lang].social_media }}
+</h2>
 <div>
   <a
     href="https://www.youtube.com/channel/UC39oc5Sq-ICfURiBrZyq1kg"
-    class="lab la-youtube"
+    class="lab la-youtube-square"
   ></a>
   <a href="https://twitter.com/_ldd" class="lab la-twitter"></a>
   <a
@@ -16,7 +18,7 @@
   action="https://necromancers-gift.us17.list-manage.com/subscribe/post?u=a0fac7bda055e7a0c5b600529&amp;id=a7b1f43a02"
   method="post"
 >
-  <p>Want the demo? Subscribe!</p>
+  <p>{{ site.data.info.newsletter[page.lang].action }}</p>
   <div class="input-group">
     <input
       type="email"
@@ -33,7 +35,9 @@
         value=""
       />
     </div>
-    <button class="btn btn-primary input-group-btn">Submit</button>
+    <button class="btn btn-primary input-group-btn">
+      {{ site.data.info.newsletter[page.lang].button }}
+    </button>
   </div>
   <!-- form structure -->
 </form>
