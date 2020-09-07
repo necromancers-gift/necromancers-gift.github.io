@@ -20,16 +20,13 @@ a:hover,
   color: $bodyColor;
 }
 .btn,
-.btn:hover {
+.btn:hover,
+.btn:active {
   border-color: $bodyColor;
-}
-.btn:hover {
-  background: #00968824;
 }
 .btn.active,
 .btn:active {
   background: $bodyColor;
-  border-color: $bodyColor;
 }
 
 .blog-header {
@@ -56,7 +53,7 @@ a:hover,
   .hero {
     background: url($baseurl + "/assets/images/banner.png") no-repeat right;
     background-size: auto 100%;
-    background-color: #171717;
+    background-color: $bodyColor;
   }
 }
 
@@ -137,5 +134,30 @@ i.lab {
 @each $affinity, $color in $affinities {
   .has-#{$affinity}-affinity {
     color: $color;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: $headerColor;
+    background-color: $bodyColor;
+  }
+  .blog-post-title,
+  a.lab,
+  i.lab {
+    color: $headerColor;
+  }
+  a:visited,
+  a,
+  a:hover,
+  .btn {
+    color: $headerColor;
+  }
+  .btn,
+  .btn:hover,
+  .btn:active {
+    border-color: none;
+    background: $headerColor;
+    color: $bodyColor;
   }
 }
