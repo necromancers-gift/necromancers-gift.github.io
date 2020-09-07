@@ -1,3 +1,4 @@
+@import "./variables.scss";
 @import "//fonts.googleapis.com/css?family=Six+Caps|Open+Sans:400italic,800italic,400,600,800";
 $baseurl: "{{ site.baseurl }}";
 
@@ -130,5 +131,11 @@ i.lab {
     &:first-of-type {
       order: 2;
     }
+  }
+}
+
+@each $affinity, $color in $affinities {
+  .has-#{$affinity}-affinity {
+    color: $color;
   }
 }
