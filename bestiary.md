@@ -2,13 +2,53 @@
 layout: bare
 ---
 
-<div style="display:flex; flex-wrap:wrap">
-  <img src="/assets/images/creatures/rabbit_anim_final.gif" alt="" style="height:150px; margin: 0 1rem;" onclick="openModal('rabbit')">
-  <img src="/assets/images/creatures/hands_anim_final.gif" alt="" style="height:150px; margin: 0 1rem;" onclick="openModal('hands')">
-</div>
+<style>
+  img{
+    object-fit: cover;
+    width: 450px;
+    height: 210px;
+    margin: 1rem;
+  }
+  #bestiary-modal > .modal-overlay{
+    background: transparent;
+    backdrop-filter: blur(5px);
+  }
+  #bestiary-modal p{
+    color: #2b2b2b;
+  }
+  #example-container{
+    width: 100%;
+    height: 192px;
+  }
+
+  @media screen and (max-width: 1072px ) {
+    .container > .columns {
+      flex-direction: column;
+    }
+    img{
+      width: 85vw;
+      height: 18vh;
+      margin: 0rem;
+    }
+    body, .container{
+      padding: 0;
+      margin: 0;
+    }
+  }
+</style>
+
+<div class="container">
+  <div class="columns">
+    <div class="column col-mx-auto">
+      <img src="/assets/images/creatures/rabbit_anim_final.gif" alt="" onclick="openModal('rabbit')">
+    </div>
+    <div class="column col-mx-auto">
+      <img src="/assets/images/creatures/hands_anim_final.gif" alt="" onclick="openModal('hands')">
+    </div>
+  </div>
 
 <div class="modal modal-lg" id="bestiary-modal">
-  <a href="" class="modal-overlay" aria-label="Close"  style="background: transparent; backdrop-filter: blur(5px);"  onclick="closeModal()"></a>
+  <a href="" class="modal-overlay" aria-label="Close" onclick="closeModal()"></a>
   <div class="modal-container">
     <div class="modal-header">
       <button class="btn btn-clear float-right" onclick="closeModal()"></button>
@@ -17,7 +57,7 @@ layout: bare
     <div class="modal-body">
       <div class="content">
       <p style="color:#2b2b2b">Use the sliders and color selectors to make intis(shinies) </p>
-        <div id="example-container" style="width: 100%; height: 350px">
+        <div id="example-container">
         <input class="slider" type="range" min="0" max="360" value="0" onchange="updateHue(this)">
         <input type="color" id="originalColor" name="head" value="#b3b097" onchange="replaceColor(this)">
         <input type="color" id="newColor" name="head" value="#ff0000" onchange="replaceColor(this)">
