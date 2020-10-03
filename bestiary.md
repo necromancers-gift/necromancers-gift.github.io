@@ -20,6 +20,13 @@ layout: bare
     width: 100%;
     height: 280px;
   }
+  body{
+    overflow-x:hidden;
+  }
+  body.modal-open{
+    overflow: hidden;
+    position: fixed;
+  }
 
   @media screen and (max-width: 1072px ) {
     body, .container{

@@ -92,9 +92,12 @@ const api = (function () {
       filters = api.setupFilters(app, creatureName);
       document.getElementById("originalColor").value =
         "#" + colors[creatureName][0].toString(16);
+      document.body.classList.add("modal-open");
     };
-    const closeModal = () => modal.classList.remove("active");
-
+    const closeModal = () => {
+      modal.classList.remove("active");
+      document.body.classList.remove("modal-open");
+    };
     function updateHue(event) {
       filters[1].hue(event.value);
     }
