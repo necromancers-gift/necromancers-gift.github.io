@@ -18,10 +18,14 @@ layout: bare
   }
   #example-container{
     width: 100%;
-    height: 192px;
+    height: 280px;
   }
 
   @media screen and (max-width: 1072px ) {
+    body, .container{
+      padding: 0;
+      margin: 0;
+    }
     .container > .columns {
       flex-direction: column;
     }
@@ -30,9 +34,9 @@ layout: bare
       height: 18vh;
       margin: 0rem;
     }
-    body, .container{
-      padding: 0;
-      margin: 0;
+    #example-container{
+      width: 100%;
+      height: 600px;
     }
   }
 </style>

@@ -13,7 +13,7 @@ const api = (function () {
     water_starter: [0x52b7cc, 0xb3b097],
   };
 
-  function setupAnimatedCreature(app, name) {
+  function setupAnimatedCreature(app, name, scale = 1) {
     // create it
     const sheet = PIXI.Loader.shared.resources[CREATURE_URL].spritesheet;
     const textures = Array(8)
@@ -23,8 +23,9 @@ const api = (function () {
     animatedCreature.play();
 
     // reposition it
+    animatedCreature.x = app.screen.width / 2;
     animatedCreature.y = app.screen.height;
-    animatedCreature.scale.set(3);
+    animatedCreature.scale.set(scale);
     animatedCreature.anchor.set(0, 1);
 
     // add it to the stage
@@ -60,12 +61,25 @@ const api = (function () {
     while (app.stage.children[0]) {
       app.stage.removeChild(app.stage.children[0]);
     }
-    let creature = setupAnimatedCreature(app, `${creatureName}_A`);
-    creature.x = 0;
-    creature = setupAnimatedCreature(app, `${creatureName}_B`);
-    creature.x = 128;
-    creature = setupAnimatedCreature(app, `${creatureName}_C`);
-    creature.x = 128 * 2.5;
+    const isSmallScreen = window.innerWidth < 450;
+    const stages = ["A", "B", "C"];
+    const offsets = [0, 128, 128 * 2.5];
+
+    Array(3)
+      .fill(null)
+      .forEach((_, i) => {
+        const stage = stages[i];
+        const offset = offsets[i];
+        let creature = setupAnimatedCreature(
+          app,
+          `${creatureName}_${stage}`,
+          isSmallScreen ? 2 : 3
+        );
+        if (isSmallScreen) {
+          creature.anchor.set(0.5, 0);
+          creature.y = offset;
+        } else creature.x = offset;
+      });
   }
 
   function helper(modal, container) {
