@@ -50,12 +50,12 @@ layout: bare
 
 <div class="container">
   <div class="columns">
+  {% for creature in site.data.creatures.bestiary %}
     <div class="column col-mx-auto">
-      <img src="/assets/images/creatures/rabbit_anim_final.gif" alt="" onclick="openModal('rabbit')">
+      <img src="/assets/images/creatures/{{ creature }}_anim_final.gif" alt="" onclick="openModal('{{ creature }}')">
     </div>
-    <div class="column col-mx-auto">
-      <img src="/assets/images/creatures/hands_anim_final.gif" alt="" onclick="openModal('hands')">
-    </div>
+  {% endfor %}
+
   </div>
 
 <div class="modal modal-lg" id="bestiary-modal">

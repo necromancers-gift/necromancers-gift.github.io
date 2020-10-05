@@ -10,6 +10,8 @@ const api = (function () {
   const colors = {
     hands: [0x737450],
     rabbit: [0x78d9e8],
+    turtle: [0xff0000],
+    bat: [0xff0000],
     water_starter: [0x52b7cc, 0xb3b097],
   };
 
