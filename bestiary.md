@@ -52,7 +52,7 @@ layout: bare
   <div class="columns">
   {% for creature in site.data.creatures.bestiary %}
     <div class="column col-mx-auto">
-      <img src="/assets/images/creatures/{{ creature }}_anim_final.gif" alt="" onclick="openModal('{{ creature }}')">
+      <img src="/assets/images/creatures/{{ creature | first }}_anim_final.gif" alt="" onclick="openModal('{{ creature | join: ',' }}')">
     </div>
   {% endfor %}
 

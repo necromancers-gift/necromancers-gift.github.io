@@ -1,13 +1,19 @@
 bestiary:
-  - rabbit
-  - hands
-  - turtle
-  - bat
-  - bug
-  - fish
-  - plant
-  - flower
-  - crystals
-  - coralbear
-  - toad
-  - cobras
+  hands: [8, 8, 8]
+  turtle: [8, 8, 8]
+  bat: [8, 8, 8]
+  toad: [4, 1, 8]
+  cobras: [4, 8, 8]
+  fat_rabbit: [8, 8, 8]
+  fat_fish: [6, 8, 8]
+
+  # 2-stage creatures
+  shards: [4, 4]
+  rat: [6, 6]
+  fat_plant: [4, 4]
+  thin_plant: [4, 4]
+  firefly: [8, 8]
+
+  # 1-stage creatures
+  # goldfish: [8]
+  # ghost: [8]
