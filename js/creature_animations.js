@@ -8,6 +8,7 @@ const api = (function () {
   PIXI.Loader.shared.add(CREATURE_URL).load(() => {});
 
   const colors = {
+    default: [0xffffff],
     hands: [0x737450],
     rabbit: [0x78d9e8],
     turtle: [0xff0000],
@@ -38,7 +39,7 @@ const api = (function () {
   // add filters
   function setupFilters(app, creatureName) {
     const colorReplaceFilter = new PIXI.filters.ColorReplaceFilter(
-      colors[creatureName][0],
+      (colors[creatureName] || colors.default)[0],
       0xff0000,
       0.01
     );
@@ -100,7 +101,7 @@ const api = (function () {
       addAnimation(app, creatureName, frames.map(Number));
       filters = api.setupFilters(app, creatureName);
       document.getElementById("originalColor").value =
-        "#" + colors[creatureName][0].toString(16);
+        "#" + (colors[creatureName] || colors.default)[0].toString(16);
       document.body.classList.add("modal-open");
     };
     const closeModal = () => {
