@@ -30,6 +30,7 @@ a:hover,
 }
 
 .blog-header {
+  cursor: pointer;
   margin: 0 (-$defaultMargin) $defaultMargin;
   .breadcrumb {
     padding-left: $defaultMargin;
