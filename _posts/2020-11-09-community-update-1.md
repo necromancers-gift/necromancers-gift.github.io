@@ -14,12 +14,12 @@ However, I realize that not everyone has the time to go to discord, and trying t
 
 As this is the first one, I've decided to write a recap of the latest news for everyone here.
 
-- [<u>Discord updates</u>](#discord-changes)
-- [<u>Coverage updates</u>](#coverage-changes)
+- [<u>Discord updates</u>](#discord-updates)
+- [<u>Coverage updates</u>](#coverage-updates)
 
 ## changes
 
-### Coverage changes
+### Coverage Updates
 
 I stumbled upon two incredible youtubers: <u>Ed</u> and <u>Bloba</u>.
 
@@ -52,7 +52,7 @@ Bloba is a patreon and has made a couple of videos on the game. He has helped ru
 <br/>
 <br/>
 
-### Discord changes
+### Discord Updates
 
 Ah, I have no idea how it has worked until now, but the community is pretty weird and wholesome. Just like in my dreams!
 

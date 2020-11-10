@@ -14,7 +14,7 @@ There have obviously been a ton of game updates since the last time I wrote anyt
 - [<u>Music updates</u>](#music-updates)
 - [<u>Feedback updates</u>](#feedback-updates)
 
-## Art Changes
+## Art Updates
 
 As a result of the voting poll, I've revealed the initial roster of creatures for the game.
 You can go to the <a href="/bestiary"><u>bestiary</u></a> to see them in action, but here's a quick preview:
@@ -35,7 +35,7 @@ And finally, I also revealed capturing boxes and their animation:
 <img src="/assets/images/gameplay/capture-box.gif" alt="" style="width:100%;">
 </div>
 
-## Music Changes
+## Music Updates
 
 The game will have a very small set of songs, but I think they are great. Besides these two, there is one that hasn't been revealed yet. The best part about the songs is that they loop and that you can listen to them on repeat!
 
@@ -62,7 +62,7 @@ The game will have a very small set of songs, but I think they are great. Beside
 </div>
 <br/>
 
-## Feedback Changes
+## Feedback Updates
 
 To fix bugs and address concearns by testers, I have added two public trello boards that you can check out by clicking on them:
 
