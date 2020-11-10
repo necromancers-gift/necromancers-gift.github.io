@@ -16,10 +16,10 @@ layout: default
 <div class="blog-post-header"></div>
 
 <h3 class="blog-post-title">{{ page.title }}</h3>
+{% assign post = page %}
+{% include formatted_date.md %}
 
 <div class="blog-post-content">
   {{ content }}
 </div>
-{% assign post = page %} 
-{% include formatted_date.md %}
 {% include comments.md %}
