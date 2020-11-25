@@ -19,8 +19,10 @@ bestiary:
   firefly: [8, 8]
 
   # 1-stage creatures
-  # goldfish: [8]
-  # ghost: [8]
+  goldfish: [8]
+  ghost: [8]
+  _empty: []
+
 names:
   hands: ["touchit", "grabmore", "abductre"]
   turtle: ["tortui", "torasp", "toraspine"]
@@ -38,5 +40,6 @@ names:
   firefly: ["mystifly", "mystiflider"]
 
   # 1-stage creatures
-  goldfish: ["?"]
+  goldfish: ["depthmaw"]
   ghost: ["cephalotoxis"]
+  _empty: []

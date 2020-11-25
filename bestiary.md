@@ -53,7 +53,8 @@ layout: bare
   <div class="columns">
   {% for creature in site.data.creatures.starters %}
     <div class="column col-mx-auto">
-      <img src="/assets/images/creatures/{{ creature | first }}_anim_final.gif" alt="" onclick="openModal('{{ creature | join: ',' }}')">
+      <img src="/assets/images/creatures/{{ creature | first }}_anim_final.gif"
+       alt="" onclick="openModal('{{ creature | join: ',' }}')">
     </div>
   {% endfor %}
   </div>
@@ -63,7 +64,9 @@ layout: bare
     <div class="column col-mx-auto">
     {% assign key = creature[0] %}
       <h4>{{ site.data.creatures.names[key] | join: ' > '  }}</h4>
+    {% if creature[1][0] %}
       <img src="/assets/images/creatures/{{ creature | first }}_anim_final.gif" alt="" onclick="openModal('{{ creature | join: ',' }}')">
+    {% endif %}
     </div>
   {% endfor %}
   </div>
