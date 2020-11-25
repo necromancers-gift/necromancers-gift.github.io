@@ -1,3 +1,7 @@
+starters:
+  water_starter: [8, 8, 8]
+  wind_starter: [8, 8, 8]
+  fire_starter: [8, 8, 8]
 bestiary:
   hands: [8, 8, 8]
   turtle: [8, 8, 8]
@@ -17,3 +21,22 @@ bestiary:
   # 1-stage creatures
   # goldfish: [8]
   # ghost: [8]
+names:
+  hands: ["touchit", "grabmore", "abductre"]
+  turtle: ["tortui", "torasp", "toraspine"]
+  bat: ["shadowing", "nightmare", "nightterror"]
+  toad: ["puddole", "???", "croakodile"]
+  cobras: ["venito", "vendel", "venydra"]
+  fat_rabbit: ["magauri", "lepha", "gigaquad"]
+  fat_fish: ["pisci", "psaslimni", "pantalassodon"]
+
+  # 2-stage creatures
+  shards: ["abstractum", "abstracticus"]
+  rat: ["mokinoko", "mohizumi"]
+  fat_plant: ["niteroot", "nevergreen"]
+  thin_plant: ["floret", "solvine"]
+  firefly: ["mystifly", "mystiflider"]
+
+  # 1-stage creatures
+  goldfish: ["?"]
+  ghost: ["cephalotoxis"]

@@ -28,6 +28,23 @@ a:hover,
 .btn:active {
   background: $bodyColor;
 }
+.blog-header,
+.bestiary-summary {
+  h1 {
+    font-family: $headerFont;
+    font-size: 80px;
+    color: $headerColor;
+    overflow: hidden;
+    text-overflow: clip;
+  }
+  h4 {
+    font-family: $bodyFont;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: rgb(207, 207, 207);
+    margin-left: 1rem;
+  }
+}
 
 .blog-header {
   cursor: pointer;
@@ -37,14 +54,6 @@ a:hover,
     a {
       color: $headerColor;
     }
-  }
-
-  h1 {
-    font-family: $headerFont;
-    font-size: 80px;
-    color: $headerColor;
-    overflow: hidden;
-    text-overflow: clip;
   }
 
   p {
@@ -112,6 +121,9 @@ i.lab {
   color: lightgrey;
   font-family: $headerFont;
   font-size: 68px;
+}
+.column {
+  margin-bottom: 2.5rem;
 }
 
 @media only screen and (max-width: 400px) {

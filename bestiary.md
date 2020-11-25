@@ -48,14 +48,24 @@ layout: bare
   }
 </style>
 
-<div class="container">
+<div class="container bestiary-summary">
+  <h1>starters</h1>
   <div class="columns">
-  {% for creature in site.data.creatures.bestiary %}
+  {% for creature in site.data.creatures.starters %}
     <div class="column col-mx-auto">
       <img src="/assets/images/creatures/{{ creature | first }}_anim_final.gif" alt="" onclick="openModal('{{ creature | join: ',' }}')">
     </div>
   {% endfor %}
-
+  </div>
+  <h1>revealed creatures</h1>
+  <div class="columns">
+  {% for creature in site.data.creatures.bestiary %}
+    <div class="column col-mx-auto">
+    {% assign key = creature[0] %}
+      <h4>{{ site.data.creatures.names[key] | join: ' > '  }}</h4>
+      <img src="/assets/images/creatures/{{ creature | first }}_anim_final.gif" alt="" onclick="openModal('{{ creature | join: ',' }}')">
+    </div>
+  {% endfor %}
   </div>
 
 <div class="modal modal-lg" id="bestiary-modal">
