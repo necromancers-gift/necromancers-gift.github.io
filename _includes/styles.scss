@@ -38,11 +38,10 @@ a:hover,
     text-overflow: clip;
   }
   h4 {
-    font-family: $bodyFont;
-    font-size: 18px;
+    font-family: $headerFont;
+    font-size: 40px;
     text-transform: capitalize;
     color: rgb(207, 207, 207);
-    margin-left: 1rem;
   }
 }
 

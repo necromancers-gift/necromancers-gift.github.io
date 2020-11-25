@@ -21,7 +21,7 @@ layout: bare
     height: 280px;
   }
   body{
-    overflow-x:hidden;
+    overflow-x: hidden;
   }
   body.modal-open{
     overflow: hidden;
@@ -30,7 +30,7 @@ layout: bare
 
   @media screen and (max-width: 1072px ) {
     body, .container{
-      padding: 0;
+      padding: 0 0.6rem;
       margin: 0;
     }
     .container > .columns {
