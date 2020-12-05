@@ -26,30 +26,14 @@ I stumbled upon two incredible youtubers: <u>Ed</u> and <u>Bloba</u>.
 
 Every week, Ed will cover news on the game, and other similar monster-taming games. I'm pretty sure I wouldn't have a community if I hadn't found out about him, so he's obviously making it into the game.
 
- <div class="embed-container">
-  <iframe
-    width="100%"
-    height="100%"
-    src="https://www.youtube-nocookie.com/embed/tBOX2wtvMPU?controls=0"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  ></iframe>
-</div>
+{% assign youtube_id = "tBOX2wtvMPU" %}
+{% include youtube_video.html %}
 <br/>
 
 Bloba is a patreon and has made a couple of videos on the game. He has helped run most of the naming contests and has won a ton of inti(shiny) art contests. Here is a video of him going over the first Q&A:
 
- <div class="embed-container">
-  <iframe
-    width="100%"
-    height="100%"
-    src="https://www.youtube-nocookie.com/embed/lPSEaYGIs8E?controls=0"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  ></iframe>
-</div>
+{% assign youtube_id = "lPSEaYGIs8E" %}
+{% include youtube_video.html %}
 <br/>
 <br/>
 
@@ -77,16 +61,8 @@ And there have even been a couple of memes about it. I hope you like them too!
 
 We've also had TbH (trials by hamster) to decide a couple of those contest when they ended in a tie. A community member(Sirc) coordinated with his hamster(Samira) to help us. Here is the first one of those:
 
- <div class="embed-container">
-  <iframe
-    width="100%"
-    height="100%"
-    src="https://www.youtube-nocookie.com/embed/prsxf84JVI4?controls=0"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  ></iframe>
-</div>
+{% assign youtube_id = "prsxf84JVI4" %}
+{% include youtube_video.html %}
 <br/>
 
 There is a scene in an anime I really like where a character tells the other everything they have to offer to them. The list is as follows:
@@ -97,16 +73,8 @@ There is a scene in an anime I really like where a character tells the other eve
 - a starry sky
 - spiteful and abusive words
 
- <div class="embed-container">
-  <iframe
-    width="100%"
-    height="100%"
-    src="https://www.youtube-nocookie.com/embed/15ljA_zM0ME?controls=0"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  ></iframe>
-</div>
+{% assign youtube_id = "15ljA_zM0ME" %}
+{% include youtube_video.html %}
 <br/>
 I wonder what I'll be able to offer to my players at the end of this journey. But today, that list surely includes memes, pictures of cute pets and food, as it should!
 

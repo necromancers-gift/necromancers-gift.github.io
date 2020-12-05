@@ -40,27 +40,11 @@ And finally, I also revealed capturing boxes and their animation:
 
 The game will have a very small set of songs, but I think they are great. Besides these two, there is one that hasn't been revealed yet. The best part about the songs is that they loop and that you can listen to them on repeat!
 
- <div class="embed-container">
-  <iframe
-    width="100%"
-    height="100%"
-    src="https://www.youtube-nocookie.com/embed/rueyQqKTeF4?controls=0"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  ></iframe>
-</div>
+{% assign youtube_id = "rueyQqKTeF4" %}
+{% include youtube_video.html %}
 <br/>
- <div class="embed-container">
-  <iframe
-    width="100%"
-    height="100%"
-    src="https://www.youtube-nocookie.com/embed/-OxiG1CO50E?controls=0"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  ></iframe>
-</div>
+{% assign youtube_id = "-OxiG1CO50E" %}
+{% include youtube_video.html %}
 <br/>
 
 ## Feedback Updates
