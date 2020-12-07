@@ -3,6 +3,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "Necromancer's Gift" # the name of your site, e.g. ACME Corp.
 author: "ldd"
 
+plugins:
+  - jekyll-feed
+
 sass:
   style: compressed
 repository: necromancers-gift/necromancers-gift.github.io
