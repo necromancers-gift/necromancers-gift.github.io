@@ -81,6 +81,24 @@ a:hover,
 .blog-post-content {
   margin: 0px auto;
   text-align: justify;
+
+  pre {
+    overflow-y: auto;
+  }
+  code {
+    color: lightgrey;
+    background: none;
+  }
+  .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.5rem 0;
+  }
+  > ul > li {
+    list-style: outside;
+  }
 }
 .blog-post-title {
   margin-bottom: 0rem;
