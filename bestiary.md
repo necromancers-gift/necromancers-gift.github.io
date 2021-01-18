@@ -70,6 +70,17 @@ layout: bare
     </div>
   {% endfor %}
   </div>
+  <h1>legendaries</h1>
+  <div class="columns">
+  {% for creature in site.data.creatures.legendaries %}
+    <div class="column col-mx-auto">
+    {% assign key = creature[0] %}
+      <h4>{{ site.data.creatures.names[key] | join: ' > '  }}</h4>
+      <img src="/assets/images/creatures/{{ creature | first }}_anim_final.gif"
+       alt="" onclick="openModal('{{ creature | join: ',' }}')">
+    </div>
+  {% endfor %}
+  </div>
 
 <div class="modal modal-lg" id="bestiary-modal">
   <a href="" class="modal-overlay" aria-label="Close" onclick="closeModal()"></a>

@@ -2,6 +2,10 @@ starters:
   wind_starter: [8, 8, 8]
   fire_starter: [8, 8, 8]
   water_starter: [8, 8, 8]
+legendaries:
+  wind_legend: [8, 8]
+  fire_legend: [8, 8]
+  water_legend: [8, 8]
 bestiary:
   hands: [8, 8, 8]
   turtle: [8, 8, 8]
@@ -43,3 +47,8 @@ names:
   goldfish: ["depthmaw"]
   ghost: ["cephalotoxis"]
   _empty: []
+
+  # legendaries
+  wind_legend: ["buresuaki", "kazeaki"]
+  fire_legend: ["stellus", "aurastra"]
+  water_legend: ["Axofloatl", "ryunami"]
