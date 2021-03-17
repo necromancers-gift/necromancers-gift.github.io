@@ -1,6 +1,6 @@
 ---
-layout: default
+layout: bare
 lang: fr
 ---
 
-{% include info.html %}
+{% include landing.html %}

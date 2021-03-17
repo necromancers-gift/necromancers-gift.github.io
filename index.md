@@ -2,20 +2,4 @@
 layout: bare
 ---
 
-<div class="container">
-  <div class="columns">
-    <div class="column col-7 col-mx-auto col-sm-12">
-      {% assign youtube_id = "_XZnipQivmM" %} {% include youtube_video.html %}
-      <div class="call-to-action">
-      <!-- match kickstarter brand colors -->
-        <a
-          class="btn btn-primary"
-          style="background:#05ce78;border-color:#222222"
-          href="https://www.kickstarter.com/projects/necromancers-gift/necromancers-gift"
-          >{{ site.data.info.landing[page.lang].action }}</a
-        >
-        <a href="/info"><u>{{ site.data.info.landing[page.lang].more-info }}</u></a>
-      </div>
-    </div>
-  </div>
-</div>
+{% include landing.html %}
