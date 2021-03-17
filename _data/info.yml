@@ -17,7 +17,15 @@ newsletter:
 info:
   en:
     title: info
-    text: Bestiary
+    bestiary: Bestiary
+    feature-creatures: 100 creatures in gorgeous pixel art
+    feature-capture: Capture and see yout creatures evolve as they level up
+    feature-map: No overworld, straightforward map for easy navigation
+    feature-battle_system: Turn based system with PvP online/LAN battles available
   fr:
     title: info
-    text: Bestiaire
+    bestiary: Bestiaire
+    feature-creatures: 100 creatures en pixel art magnifiques!
+    feature-capture: Capture et evolve tes creatures en avancant des levels
+    feature-map: Pas de overworld, mais une navigation plus simple
+    feature-battle_system: Systeme turnes, PvP online/LAN inclus

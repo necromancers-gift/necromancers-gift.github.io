@@ -2,8 +2,45 @@
 
 {% assign youtube_id = "_XZnipQivmM" %} {% include youtube_video.html %}
 
+<!-- -- -->
+{% include newsletter.html %}
+
 <h2 style="color: lightgrey; margin-top: 2rem">
   {{ site.data.info.info[page.lang].title }}
 </h2>
-<a href="/bestiary"><u>{{ site.data.info.info[page.lang].text }}</u></a>
-<a href="/presskit"><u>PressKit</u></a>
+
+<div style="display: flex; justify-content: space-between; align-items: center">
+  <p>
+    <a href="/bestiary"
+      ><u>{{ site.data.info.info[page.lang].feature-creatures }}</u></a
+    >
+  </p>
+  <img
+    src="/assets/images/features/0_creatures.gif"
+    alt=""
+    style="width: 45%"
+  />
+</div>
+
+<div class="info-feature">
+  <img src="/assets/images/features/1_capture.gif" alt="" />
+  <p>{{ site.data.info.info[page.lang].feature-capture }}</p>
+</div>
+
+<div class="info-feature">
+  <p>{{ site.data.info.info[page.lang].feature-map }}</p>
+  <img src="/assets/images/features/2_map.gif" alt="" />
+</div>
+
+<div class="info-feature">
+  <img src="/assets/images/features/3_battle.gif" alt="" />
+  <p>{{ site.data.info.info[page.lang].feature-battle_system }}</p>
+</div>
+
+<!-- footer -->
+<div class="info-footer">
+  <a href="/presskit">📰 <u>PressKit</u></a>
+  <a href="/bestiary">
+    🐾 <u>{{ site.data.info.info[page.lang].bestiary }}</u></a
+  >
+</div>

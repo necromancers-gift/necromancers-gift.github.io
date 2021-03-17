@@ -160,6 +160,29 @@ i.las {
   margin-bottom: 2.5rem;
 }
 
+// info features and footer
+.info-feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+  img {
+    width: 48%;
+  }
+  p {
+    max-width: 45%;
+    text-align: justify;
+  }
+}
+.info-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  a {
+    margin: 0 1rem;
+  }
+}
 @media only screen and (max-width: 400px) {
   .blog-header .hero {
     background-position: center;
