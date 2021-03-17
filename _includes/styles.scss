@@ -28,6 +28,18 @@ a:hover,
 .btn:active {
   background: $bodyColor;
 }
+
+// landing page
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  a:first-of-type {
+    margin: 1.2rem 0;
+  }
+}
+
+// blog posts, comments, etc
 .blog-header,
 .bestiary-summary {
   h1 {
