@@ -1,3 +1,10 @@
+landing:
+  en:
+    action: Live on Kickstarter
+    more-info: More info
+  fr:
+    action: Aidez-moi sur Kickstarter
+    more-info: Plus d'infos
 updates:
   en: updates
   fr: nouvelles
