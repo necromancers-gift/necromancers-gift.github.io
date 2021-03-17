@@ -60,9 +60,15 @@ a:hover,
   }
 
   .hero {
+    position: relative;
     background: url($baseurl + "/assets/images/banner.png") no-repeat right;
     background-size: auto 100%;
     background-color: $bodyColor;
+  }
+  .hero-footer {
+    position: absolute;
+    left: 0.2rem;
+    bottom: 0.2rem;
   }
 }
 
@@ -119,6 +125,12 @@ a.las,
 i.lab,
 i.las {
   font-size: 48px;
+}
+.mailing-list-subscription {
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 // youtube embed based on https://embedresponsively.com/
@@ -179,7 +191,9 @@ i.las {
   }
   .blog-post-title,
   a.lab,
-  i.lab {
+  a.las,
+  i.lab,
+  i.las {
     color: $headerColor;
   }
   a:visited,

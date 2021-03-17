@@ -10,7 +10,7 @@
   target="_blank"
 >
 <button class="btn" style="margin: 1.5rem 0;">Add Comment</button>
-<form>
+</form>
 <div id="blog-comments" >
 </div>
 <script type="text/javascript"> 
