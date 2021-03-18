@@ -12,7 +12,7 @@ repository: necromancers-gift/necromancers-gift.github.io
 # github: [metadata]
 github_issues_repository: "necromancers-gift/necromancers-gift.github.io"
 
-exclude: ["presskit_template"]
+exclude: ["presskit_template", "scripts", ".env"]
 
 defaults:
   - scope:
