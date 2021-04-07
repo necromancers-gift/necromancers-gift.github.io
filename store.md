@@ -12,10 +12,12 @@ layout: bare
   }
   .novice-action{
     background:transparent;
+    color: white;
     border: 1px white solid;
   }
   .novice-action:hover{
     background: white;
+    color: #171717
   }
 </style>
 <div class="columns">
@@ -46,7 +48,7 @@ layout: bare
         <div class="panel-title text-bold">Estimated Release Date</div>
         <div class="panel-title">December 2022</div>
       </div>
-      <a href="." rel="nofollow" class="btn btn-block novice-action">$10.99 Pre-order Now</a>
+      <a href="https://transactions.sendowl.com/products/78487502/BC579646/purchase" rel="nofollow" class="btn btn-block novice-action">$10.99 Pre-order Now</a>
     </div>
 
   </div>
@@ -102,7 +104,7 @@ layout: bare
         <div class="panel-title">December 2022</div>
         <div class="panel-title"><i>Alpha Access</i> August 2021</div>
       </div>
-      <a href="." rel="nofollow" class="btn btn-primary btn-block">$19.99 Pre-order Now</a>
+      <a href="https://transactions.sendowl.com/products/78487530/CDF32F2A/purchase" rel="nofollow" class="btn btn-primary btn-block">$19.99 Pre-order Now</a>
     </div>
   </div>
 </div>
