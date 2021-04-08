@@ -23,7 +23,7 @@ layout: bare
 <div class="columns">
   <div class="panel column col-sm-12 col-3 col-mx-auto">
     <div class="panel-header">
-      <div class="panel-title text-bold">Novice Tier</div>
+      <div class="panel-title text-bold">Base Tier</div>
     </div>
     <div class="panel-body">
       <div class="tile tile-centered">
