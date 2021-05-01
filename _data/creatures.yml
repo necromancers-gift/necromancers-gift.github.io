@@ -7,6 +7,10 @@ legendaries:
   fire_legend: [16, 16]
   water_legend: [12, 12]
 bestiary:
+  ##############
+  # 1st batch #
+  ##############
+
   hands: [8, 8, 8]
   turtle: [8, 8, 8]
   bat: [8, 8, 8]
@@ -25,9 +29,32 @@ bestiary:
   # 1-stage creatures
   goldfish: [8]
   ghost: [8]
-  _empty: []
+
+  ##############
+  # 2nd batch #
+  ##############
+  goats: [3, 3]
+  jellyfish: [3, 3, 3]
+  seedpods: [3, 3, 3]
+  wolf: [3, 3]
+  mollusk: [3, 3]
+  bear: [3, 3]
+  clam: [3, 3]
+  mink: [3, 3]
+  seahorse: [3]
+  toucan: [3]
+  skullguy: [3]
+  capybara: [3]
+
+  # for alignment purposes
+  _empty1: []
+  _empty2: []
 
 names:
+  ##############
+  # 1st batch #
+  ##############
+
   hands: ["touchit", "grabmore", "abductre"]
   turtle: ["tortui", "torasp", "toraspine"]
   bat: ["shadowing", "nightmare", "nightterror"]
@@ -46,7 +73,22 @@ names:
   # 1-stage creatures
   goldfish: ["depthmaw"]
   ghost: ["cephalotoxis"]
-  _empty: []
+
+  ##############
+  # 2nd batch #
+  ##############
+  goats: ["Fulgurus", "Thunbos"]
+  jellyfish: ["Jelling", "Jellous", "Jellking"]
+  seedpods: ["Wis", "Wister", "Wistynia"]
+  wolf: ["Luni", "Eclix"]
+  mollusk: ["Conicus", "Naughtilus"]
+  bear: ["Minurs", "Majursa"]
+  clam: ["Shearl", "Purrltrap"]
+  mink: ["Minlight", "Umbrink"]
+  seahorse: ["???"]
+  toucan: ["???"]
+  skullguy: ["???"]
+  capybara: ["???"]
 
   # legendaries
   wind_legend: ["buresuaki", "kazeaki"]
