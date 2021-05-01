@@ -77,7 +77,7 @@ names:
   ##############
   # 2nd batch #
   ##############
-  goats: ["Fulgurus", "Thunbos"]
+  goats: ["Thunbos", "Fulgurus"]
   jellyfish: ["Jelling", "Jellous", "Jellking"]
   seedpods: ["Wis", "Wister", "Wistynia"]
   wolf: ["Luni", "Eclix"]
