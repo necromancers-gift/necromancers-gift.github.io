@@ -45,10 +45,10 @@ bestiary:
   toucan: [3]
   skullguy: [3]
   capybara: [3]
+  mouse: [3]
+  red_panda: [3]
 
   # for alignment purposes
-  _empty1: []
-  _empty2: []
 
 names:
   ##############
@@ -87,8 +87,10 @@ names:
   mink: ["Minlight", "Umbrink"]
   seahorse: ["Ryusumi"]
   toucan: ["Sircan"]
-  skullguy: ["???"]
-  capybara: ["???"]
+  skullguy: ["Jingem"]
+  capybara: ["Capybeary"]
+  mouse: ["???"]
+  red_panda: ["???"]
 
   # legendaries
   wind_legend: ["buresuaki", "kazeaki"]
