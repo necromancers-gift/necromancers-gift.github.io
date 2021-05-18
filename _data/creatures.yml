@@ -45,8 +45,8 @@ bestiary:
   toucan: [3]
   skullguy: [3]
   capybara: [3]
-  mouse: [3]
   red_panda: [3]
+  mouse: [3]
 
   # for alignment purposes
 
@@ -89,8 +89,8 @@ names:
   toucan: ["Sircan"]
   skullguy: ["Jingem"]
   capybara: ["Capybeary"]
-  mouse: ["???"]
-  red_panda: ["???"]
+  red_panda: ["Pandoria"]
+  mouse: ["Ukucha"]
 
   # legendaries
   wind_legend: ["buresuaki", "kazeaki"]
