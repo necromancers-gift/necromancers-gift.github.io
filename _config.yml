@@ -12,7 +12,8 @@ repository: necromancers-gift/necromancers-gift.github.io
 # github: [metadata]
 github_issues_repository: "necromancers-gift/necromancers-gift.github.io"
 
-exclude: ["presskit_template", "scripts", ".env"]
+# include vendor to avoid errors https://github.com/jekyll/jekyll/issues/5267#issuecomment-241379902
+exclude: ["presskit_template", "scripts", ".env", "vendor"]
 
 defaults:
   - scope:
