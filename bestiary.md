@@ -54,7 +54,9 @@ layout: bare
   {% for creature in site.data.creatures.starters %}
     <div class="column col-mx-auto">
       <img src="/assets/images/creatures/{{ creature | first }}_anim_final.gif"
-       alt="" onclick="openModal('{{ creature | join: ',' }}')">
+       loading="lazy"
+       alt="" onclick="openModal('{{ creature | join: ',' }}')"
+       >
     </div>
   {% endfor %}
   </div>
@@ -65,7 +67,7 @@ layout: bare
     {% assign key = creature[0] %}
       <h4>{{ site.data.creatures.names[key] | join: ' > '  }}</h4>
     {% if creature[1][0] %}
-      <img src="/assets/images/creatures/{{ creature | first }}_anim_final.gif" alt="" onclick="openModal('{{ creature | join: ',' }}')">
+      <img src="/assets/images/creatures/{{ creature | first }}_anim_final.gif" loading="lazy" alt="" onclick="openModal('{{ creature | join: ',' }}')">
     {% endif %}
     </div>
   {% endfor %}
@@ -77,6 +79,7 @@ layout: bare
     {% assign key = creature[0] %}
       <h4>{{ site.data.creatures.names[key] | join: ' > '  }}</h4>
       <img src="/assets/images/creatures/{{ creature | first }}_anim_final.gif"
+       loading="lazy"
        alt="" onclick="openModal('{{ creature | join: ',' }}')">
     </div>
   {% endfor %}
@@ -101,13 +104,27 @@ layout: bare
     <div class="modal-footer"></div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/pixi-filters@latest/dist/pixi-filters.js"></script>
-<script src="/js/creature_animations.js"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script>
 
-<script>
-  const modal = document.getElementById("bestiary-modal");
-  const container = document.getElementById("example-container");
-  const {openModal, closeModal, updateHue, replaceColor}= api.helper(modal, container);
-
+<script async>
+  function loadScript(fileName, callback){
+    var scriptElement = document.createElement('script');
+    scriptElement.type = 'text/javascript';
+    scriptElement.onload = callback;
+    scriptElement.src = fileName;
+    document.head.appendChild(scriptElement);
+  }
+  window.onload = function(){
+    loadScript("https://cdn.jsdelivr.net/npm/pixi-filters@latest/dist/pixi-filters.js");
+    loadScript("/js/creature_animations.js", function(){
+      var modal = document.getElementById("bestiary-modal");
+      var container = document.getElementById("example-container");
+      var helpers = api.helper(modal, container);
+      var props = ["openModal", "closeModal", "updateHue", "replaceColor"];
+      for(i=0; i < props.length; i+=1){
+        var prop = props[i];
+        window[prop] = helpers[prop];
+      }
+    });
+  }
 </script>
