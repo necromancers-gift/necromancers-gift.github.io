@@ -51,6 +51,9 @@ bestiary:
   # for alignment purposes
 
 names:
+  #starters
+  wind_starter: ["sunli","sunlitika", "litikaa"]
+
   ##############
   # 1st batch #
   ##############

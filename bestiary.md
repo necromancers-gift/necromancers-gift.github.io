@@ -53,6 +53,8 @@ layout: bare
   <div class="columns">
   {% for creature in site.data.creatures.starters %}
     <div class="column col-mx-auto">
+    {% assign key = creature[0] %}
+      <h4>{{ site.data.creatures.names[key] | join: ' > ' | default : "???" }}</h4>
       <img src="/assets/images/creatures/{{ creature | first }}_anim_final.gif"
        loading="lazy"
        alt="" onclick="openModal('{{ creature | join: ',' }}')"
