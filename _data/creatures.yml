@@ -52,7 +52,7 @@ bestiary:
 
 names:
   #starters
-  wind_starter: ["sunli","sunlitika", "litikaa"]
+  wind_starter: ["sunli", "sunlitika", "litika"]
 
   ##############
   # 1st batch #
