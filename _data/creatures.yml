@@ -53,6 +53,8 @@ bestiary:
 names:
   #starters
   wind_starter: ["sunli", "sunlitika", "litika"]
+  fire_starter: ["pu’u ahi", "ingeru mura", "o ka popoki dia"]
+  water_starter: ["shialis", "arakite", "raiunix"]
 
   ##############
   # 1st batch #
