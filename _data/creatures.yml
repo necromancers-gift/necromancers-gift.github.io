@@ -8,7 +8,7 @@ legendaries:
   water_legend: [12, 12]
 bestiary:
   ##############
-  # 1st batch #
+  # 1st batch  #
   ##############
 
   hands: [8, 8, 8]
@@ -31,7 +31,7 @@ bestiary:
   ghost: [8]
 
   ##############
-  # 2nd batch #
+  # 2nd batch  #
   ##############
   goats: [3, 3]
   jellyfish: [3, 3, 3]
@@ -48,7 +48,15 @@ bestiary:
   red_panda: [3]
   mouse: [3]
 
+  ##############
+  # 3rd batch  #
+  ##############
+  dino: [3, 3]
+  fluffy: [3, 3, 3, 3]
+  alien: [3, 3]
+
   # for alignment purposes
+  empty: []
 
 names:
   #starters
@@ -57,7 +65,7 @@ names:
   water_starter: ["shialis", "arakite", "raiunix"]
 
   ##############
-  # 1st batch #
+  # 1st batch  #
   ##############
 
   hands: ["touchit", "grabmore", "abductre"]
@@ -80,7 +88,7 @@ names:
   ghost: ["cephalotoxis"]
 
   ##############
-  # 2nd batch #
+  # 2nd batch  #
   ##############
   goats: ["Thunbos", "Fulgurus"]
   jellyfish: ["Jelling", "Jellous", "Jellking"]
@@ -96,6 +104,13 @@ names:
   capybara: ["Capybeary"]
   red_panda: ["Pandoria"]
   mouse: ["Ukucha"]
+
+  ##############
+  # 3rd batch  #
+  ##############
+  dino: ["Viltooth", "Orthrend"]
+  fluffy: ["?", "??", "???", "????"]
+  alien: ["???", "???"]
 
   # legendaries
   wind_legend: ["buresuaki", "kazeaki"]
