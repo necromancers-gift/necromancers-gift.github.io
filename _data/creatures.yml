@@ -1,4 +1,4 @@
-starters:
+fstarters:
   wind_starter: [8, 8, 8]
   fire_starter: [8, 8, 8]
   water_starter: [8, 8, 8]
@@ -68,7 +68,7 @@ names:
   # 1st batch  #
   ##############
 
-  hands: ["touchit", "grabmore", "abductre"]
+  hands: ["touchit", "grabmor", "abductre"]
   turtle: ["tortui", "torasp", "toraspine"]
   bat: ["shadowing", "nightmare", "nightterror"]
   toad: ["puddole", "croaklet", "croakodile"]
