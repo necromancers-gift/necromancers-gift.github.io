@@ -1,4 +1,4 @@
-fstarters:
+starters:
   wind_starter: [8, 8, 8]
   fire_starter: [8, 8, 8]
   water_starter: [8, 8, 8]
@@ -6,6 +6,7 @@ legendaries:
   wind_legend: [12, 12]
   fire_legend: [16, 16]
   water_legend: [12, 12]
+
 bestiary:
   ##############
   # 1st batch  #
@@ -54,6 +55,8 @@ bestiary:
   dino: [3, 3]
   fluffy: [3, 3, 3, 3]
   alien: [3, 3]
+  armadillo: [3]
+  worm: [3]
 
   # for alignment purposes
   empty: []
@@ -109,8 +112,10 @@ names:
   # 3rd batch  #
   ##############
   dino: ["Viltooth", "Orthrend"]
-  fluffy: ["????"]
-  alien: ["???", "???"]
+  fluffy: ["Umbrasimia, Umbracanis, Umbraavium, Umbrafelis"]
+  alien: ["Gorgocat", "Illidusa"]
+  armadillo: ["???"]
+  worm: ["???"]
 
   # legendaries
   wind_legend: ["buresuaki", "kazeaki"]
