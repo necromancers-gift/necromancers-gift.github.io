@@ -57,6 +57,7 @@ bestiary:
   alien: [3, 3]
   armadillo: [3]
   worm: [3]
+  spider: [3]
 
   # for alignment purposes
   empty: []
@@ -114,8 +115,9 @@ names:
   dino: ["Viltooth", "Orthrend"]
   fluffy: ["Umbrasimia, Umbracanis, Umbraavium, Umbrafelis"]
   alien: ["Gorgocat", "Illidusa"]
-  armadillo: ["???"]
+  armadillo: ["Volrunt"]
   worm: ["???"]
+  spider: ["???"]
 
   # legendaries
   wind_legend: ["buresuaki", "kazeaki"]
