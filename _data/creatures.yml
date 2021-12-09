@@ -59,6 +59,8 @@ bestiary:
   armadillo: [3]
   worm: [3]
   spider: [3]
+  stabbed_mammal: [3]
+  handy_cat: [3]
 
   # for alignment purposes
   empty: []
@@ -119,7 +121,9 @@ names:
   halloween_bat: ["???", "???"]
   armadillo: ["Volrunt"]
   worm: ["???"]
-  spider: ["???"]
+  spider: ["Ariaxa"]
+  stabbed_mammal: ["???"]
+  handy_cat: ["???"]
 
   # legendaries
   wind_legend: ["buresuaki", "kazeaki"]
