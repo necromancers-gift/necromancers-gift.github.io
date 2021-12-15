@@ -61,6 +61,7 @@ bestiary:
   spider: [3]
   stabbed_mammal: [3]
   handy_cat: [3]
+  crab: [3]
 
   # for alignment purposes
   empty: []
@@ -122,8 +123,9 @@ names:
   armadillo: ["Volrunt"]
   worm: ["???"]
   spider: ["Ariaxa"]
-  stabbed_mammal: ["???"]
+  stabbed_mammal: ["Vispyes"]
   handy_cat: ["???"]
+  crab: ["???"]
 
   # legendaries
   wind_legend: ["buresuaki", "kazeaki"]
