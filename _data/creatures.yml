@@ -65,6 +65,8 @@ bestiary:
 
   # for alignment purposes
   empty: []
+  _empty: []
+  __empty: []
 
 names:
   #starters

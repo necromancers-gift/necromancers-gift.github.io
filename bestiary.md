@@ -27,7 +27,10 @@ layout: bare
     overflow: hidden;
     position: fixed;
   }
-
+  .container > .columns > .column {
+    min-width: calc(450px + 2rem);
+    margin: 0;
+  }
   @media screen and (max-width: 1072px ) {
     body, .container{
       padding: 0 0.6rem;
