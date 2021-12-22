@@ -62,6 +62,7 @@ bestiary:
   stabbed_mammal: [3]
   handy_cat: [3]
   crab: [3]
+  skull_ghost: [3]
 
   # for alignment purposes
   empty: []
@@ -128,6 +129,7 @@ names:
   stabbed_mammal: ["Vispyes"]
   handy_cat: ["???"]
   crab: ["???"]
+  skull_ghost: ["???"]
 
   # legendaries
   wind_legend: ["buresuaki", "kazeaki"]
