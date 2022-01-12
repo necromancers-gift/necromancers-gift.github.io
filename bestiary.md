@@ -58,10 +58,7 @@ layout: bare
     <div class="column col-mx-auto">
     {% assign key = creature[0] %}
       <h4>{{ site.data.creatures.names[key] | join: ' > ' | default : "???" }}</h4>
-      <img src="/assets/images/creatures/{{ creature | first }}_anim_final.gif"
-       loading="lazy"
-       alt="" onclick="openModal('{{ creature | join: ',' }}')"
-       >
+      <img src="/assets/images/creatures/{{ creature | first }}_anim_final.gif" loading="lazy" alt="">
     </div>
   {% endfor %}
   </div>
@@ -72,7 +69,7 @@ layout: bare
     {% assign key = creature[0] %}
       <h4>{{ site.data.creatures.names[key] | join: ' > '  }}</h4>
     {% if creature[1][0] %}
-      <img src="/assets/images/creatures/{{ creature | first }}_anim_final.gif" loading="lazy" alt="" onclick="openModal('{{ creature | join: ',' }}')">
+      <img src="/assets/images/creatures/{{ creature | first }}_anim_final.gif" loading="lazy" alt="">
     {% endif %}
     </div>
   {% endfor %}
@@ -83,28 +80,8 @@ layout: bare
     <div class="column col-mx-auto">
     {% assign key = creature[0] %}
       <h4>{{ site.data.creatures.names[key] | join: ' > '  }}</h4>
-      <img src="/assets/images/creatures/{{ creature | first }}_anim_final.gif"
-       loading="lazy"
-       alt="" onclick="openModal('{{ creature | join: ',' }}')">
+      <img src="/assets/images/creatures/{{ creature | first }}_anim_final.gif" loading="lazy" alt="">
     </div>
   {% endfor %}
   </div>
-
-<div class="modal modal-lg" id="bestiary-modal">
-  <a href="" class="modal-overlay" aria-label="Close" onclick="closeModal()"></a>
-  <div class="modal-container">
-    <div class="modal-header">
-      <button class="btn btn-clear float-right" onclick="closeModal()"></button>
-      <div class="modal-title h5">Creature Details</div>
-    </div>
-    <div class="modal-body">
-      <div class="content">
-      <p style="color:#2b2b2b">Use the sliders and color selectors to make intis(shinies) </p>
-        <div id="example-container">
-        <input class="slider" type="range" min="0" max="360" value="0" onchange="updateHue(this)">
-        <input type="color" id="originalColor" name="head" value="#b3b097" onchange="replaceColor(this)">
-        <input type="color" id="newColor" name="head" value="#ff0000" onchange="replaceColor(this)">
-      </div>
-    </div>
-    <div class="modal-footer"></div>
 </div>
