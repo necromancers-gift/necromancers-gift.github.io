@@ -18,12 +18,19 @@ hreflang="fr" />
   href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css"
   crossorigin
 />
+<!-- https://web.dev/render-blocking-resources/?utm_source=lighthouse&utm_medium=lr -->
 <link
-  rel="stylesheet"
-  rel="preconnect"
+  rel="preload"
   href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
-  crossorigin
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
 />
+<noscript>
+  <link
+    rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+  />
+</noscript>
 {% capture styles %} {% include styles.scss %} {% endcapture %}
 <style>
   {{ styles | scssify }}
