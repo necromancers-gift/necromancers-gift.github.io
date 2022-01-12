@@ -5,6 +5,7 @@
 <div style="display: flex; gap: 1rem;">
   <button
     class="btn"
+    type="button"
     style="margin: 1.5rem 0;"
     onclick="loadScript('/js/github-comments.js', function(){
     createComments('{{ site.github_issues_repository }}', {{ page.github_comments_id }})
@@ -16,7 +17,7 @@
     rel="nofollow"
     target="_blank"
   >
-  <button class="btn" style="margin: 1.5rem 0;">Add Comment</button>
+  <button class="btn" type="submit" style="margin: 1.5rem 0;">Add Comment</button>
   </form>
 </div>
 <div id="blog-comments" >
