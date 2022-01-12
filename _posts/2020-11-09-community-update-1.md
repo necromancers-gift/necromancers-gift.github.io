@@ -26,14 +26,12 @@ I stumbled upon two incredible youtubers: <u>Ed</u> and <u>Bloba</u>.
 
 Every week, Ed will cover news on the game, and other similar monster-taming games. I'm pretty sure I wouldn't have a community if I hadn't found out about him, so he's obviously making it into the game.
 
-{% assign youtube_id = "tBOX2wtvMPU" %}
-{% include youtube_video.html %}
+{% include youtube_video.html youtube_id = "tBOX2wtvMPU" %}
 <br/>
 
 Bloba is a patreon and has made a couple of videos on the game. He has helped run most of the naming contests and has won a ton of inti(shiny) art contests. Here is a video of him going over the first Q&A:
 
-{% assign youtube_id = "lPSEaYGIs8E" %}
-{% include youtube_video.html %}
+{% include youtube_video.html  youtube_id = "lPSEaYGIs8E"%}
 <br/>
 <br/>
 
@@ -61,8 +59,7 @@ And there have even been a couple of memes about it. I hope you like them too!
 
 We've also had TbH (trials by hamster) to decide a couple of those contest when they ended in a tie. A community member(Sirc) coordinated with his hamster(Samira) to help us. Here is the first one of those:
 
-{% assign youtube_id = "prsxf84JVI4" %}
-{% include youtube_video.html %}
+{% include youtube_video.html youtube_id = "prsxf84JVI4" %}
 <br/>
 
 There is a scene in an anime I really like where a character tells the other everything they have to offer to them. The list is as follows:
@@ -73,8 +70,7 @@ There is a scene in an anime I really like where a character tells the other eve
 - a starry sky
 - spiteful and abusive words
 
-{% assign youtube_id = "15ljA_zM0ME" %}
-{% include youtube_video.html %}
+{% include youtube_video.html youtube_id = "15ljA_zM0ME" %}
 <br/>
 I wonder what I'll be able to offer to my players at the end of this journey. But today, that list surely includes memes, pictures of cute pets and food, as it should!
 
