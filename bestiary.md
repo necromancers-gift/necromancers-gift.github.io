@@ -108,28 +108,3 @@ layout: bare
     </div>
     <div class="modal-footer"></div>
 </div>
-
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script>
-
-<script async>
-  function loadScript(fileName, callback){
-    var scriptElement = document.createElement('script');
-    scriptElement.type = 'text/javascript';
-    scriptElement.onload = callback;
-    scriptElement.src = fileName;
-    document.head.appendChild(scriptElement);
-  }
-  window.onload = function(){
-    loadScript("https://cdn.jsdelivr.net/npm/pixi-filters@latest/dist/pixi-filters.js");
-    loadScript("/js/creature_animations.js", function(){
-      var modal = document.getElementById("bestiary-modal");
-      var container = document.getElementById("example-container");
-      var helpers = api.helper(modal, container);
-      var props = ["openModal", "closeModal", "updateHue", "replaceColor"];
-      for(i=0; i < props.length; i+=1){
-        var prop = props[i];
-        window[prop] = helpers[prop];
-      }
-    });
-  }
-</script>
