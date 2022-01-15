@@ -145,17 +145,17 @@ i.las {
   justify-content: space-between;
 }
 
-// youtube embed based on https://embedresponsively.com/
 .embed-container {
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
   overflow: hidden;
   max-width: 100%;
 }
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
+.embed-container img {
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: fill-available;
+}
+.embed-container > a {
   position: absolute;
   top: 0;
   left: 0;
