@@ -2,11 +2,26 @@
 
 <noscript><i>Please enable JavaScript to view comments.</i></noscript>
 
-<div style="display: flex; gap: 1rem;">
+<style>
+  .comment-container {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  @media only screen and (max-width: 400px) {
+    .comment-container {
+      flex-direction: column;
+    }
+    .comment-container button {
+      width: 100%;
+    }
+  }
+</style>
+
+<div class="comment-container">
   <button
     class="btn"
     type="button"
-    style="margin: 1.5rem 0;"
     onclick="loadScript('/js/github-comments.js', function(){
     createComments('{{ site.github_issues_repository }}', {{ page.github_comments_id }})
     })">
@@ -17,7 +32,7 @@
     rel="nofollow"
     target="_blank"
   >
-  <button class="btn" type="submit" style="margin: 1.5rem 0;">Add Comment</button>
+  <button class="btn" type="submit">Add Comment</button>
   </form>
 </div>
 <div id="blog-comments" >
