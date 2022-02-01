@@ -3,6 +3,10 @@
   <head>
     {% include head.html %}
     <style>
+      .image-container.mid{
+        display: flex;
+        gap: 1rem;
+      }
       .image-container img{
           width: 100%;
           image-rendering: pixelated;
@@ -13,6 +17,11 @@
       }
       .blog-post-content a{
         text-decoration: underline;
+      }
+      @media only screen and (max-width: 400px) {
+        .image-container.mid {
+          flex-direction: column;
+        }
       }
     </style>
   </head>
