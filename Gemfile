@@ -18,3 +18,5 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem 'jekyll-compose', group: [:jekyll_plugins]
 end
+
+gem "webrick", "~> 1.7"
